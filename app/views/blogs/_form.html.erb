@@ -11,16 +11,16 @@
   <% end %>
   <div class="field">
     <%= form.label :content %>
-    <%= form.text_area :content %>
+    <%= form.text_area :content, class:"form-control" %>
   </div>
   <div class="field">
     <%= form.label :image %>
-    <%= form.file_field :image %>
+    <%= form.file_field :image, class:"btn btn-primary" %>
   </div>
   <div class="field">
     <%= form.hidden_field :user_id %>
   </div>
   <div class="actions">
-    <%= form.submit %>
+    <p class="btn btn-primary" ><%= form.submit %></p>
   </div>
 <% end %>
