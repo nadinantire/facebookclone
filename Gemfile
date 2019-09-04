@@ -11,8 +11,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
-gem 'carrierwave', '~> 0.11.2'
-gem 'mini_magick', '~> 4.3'
+
 gem 'bootstrap', '~> 4.3.1'
 gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
@@ -29,4 +28,6 @@ group :test do
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
 end
+gem 'carrierwave'
+gem 'mini_magick'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

@@ -2,7 +2,10 @@
 <h1>Blogs</h1>
     <% @blogs.each do |blog| %>
       <p><%= blog.content %></p>
-        <p><%= image_tag blog.image.url, class:"image" %></p>
+      <% if blog.image.url %>
+      <%= image_tag blog.image.url, class:"image" %>
+  
+      <% end %>
         <p><%= blog.user.name %></p>
         <%= link_to 'Show', blog, class:"btn btn-primary" %>
         <%= link_to 'Edit', edit_blog_path(blog), class:"btn btn-primary"%>
