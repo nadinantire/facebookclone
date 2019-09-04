@@ -42,10 +42,10 @@ class BlogsController < ApplicationController
     end
   end
   private
-    def set_blog
-      @blog = Blog.find(params[:id])
-    end
-    def blog_params
+  def set_blog
+     @blog = Blog.find(params[:id])
+  end
+  def blog_params
       params.require(:blog).permit(:content, :image, :user_id)
-    end
+  end
 end
