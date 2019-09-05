@@ -24,13 +24,6 @@ ActiveRecord::Schema.define(version: 2019_09_04_125536) do
     t.index ["user_id"], name: "index_blogs_on_user_id"
   end
 
-  create_table "posts", force: :cascade do |t|
-    t.text "image"
-    t.string "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "profiles", force: :cascade do |t|
     t.string "image"
     t.bigint "user_id"
